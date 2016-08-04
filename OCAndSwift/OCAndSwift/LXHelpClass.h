@@ -1,6 +1,6 @@
 //
 //  LXHelpClass.h
-//  SwiftAndOC
+//  OCAndSwift
 //
 //  Created by 李旭 on 16/8/4.
 //  Copyright © 2016年 李旭. All rights reserved.
@@ -12,6 +12,5 @@
 @interface LXHelpClass : NSObject
 
 + (UIImage *)getEllipseImageWithImage:(UIImage *)originImage;
-+ (void)testSingleton;
 
 @end

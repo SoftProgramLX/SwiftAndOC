@@ -1,6 +1,6 @@
 //
-//  ViewController.swift
-//  SwiftAndOC
+//  SwiftController.swift
+//  OCAndSwift
 //
 //  Created by 李旭 on 16/8/4.
 //  Copyright © 2016年 李旭. All rights reserved.
@@ -9,7 +9,7 @@
 import Foundation
 import UIKit
 
-class ViewController: UIViewController {
+class SwiftController: UIViewController {
     
     var myLabel: UILabel = UILabel()
     var myView: UIView = UIView()
@@ -32,8 +32,6 @@ class ViewController: UIViewController {
         
         self.myImageView = createImageView()
         self.view.addSubview(self.myImageView)
-        
-        LXHelpClass.testSingleton();
     }
     
     override func didReceiveMemoryWarning() {
@@ -72,7 +70,7 @@ class ViewController: UIViewController {
         button.setTitleColor(UIColor.blueColor(), forState: UIControlState.Normal)
         button.setTitle("Click me call OC func", forState: UIControlState.Normal)
         button.titleLabel?.font = UIFont.systemFontOfSize(18)
-        button.addTarget(self, action: #selector(ViewController.tappedButton(_:)), forControlEvents: UIControlEvents.TouchUpInside)
+        button.addTarget(self, action: #selector(SwiftController.tappedButton(_:)), forControlEvents: UIControlEvents.TouchUpInside)
         button.tag = 100
         
         return button
@@ -95,5 +93,4 @@ class ViewController: UIViewController {
         print(sender.tag, terminator: "swift")
     }
 }
-
 

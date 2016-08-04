@@ -15,6 +15,7 @@
 		5C6D2F0C1D536D5F00C7A341 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5C6D2F0A1D536D5F00C7A341 /* LaunchScreen.storyboard */; };
 		5C6D2F171D536D5F00C7A341 /* SwiftAndOCTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C6D2F161D536D5F00C7A341 /* SwiftAndOCTests.swift */; };
 		5C6D2F221D536D5F00C7A341 /* SwiftAndOCUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C6D2F211D536D5F00C7A341 /* SwiftAndOCUITests.swift */; };
+		5C9F1A6C1D53763F00240298 /* LXSingleton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C9F1A6B1D53763F00240298 /* LXSingleton.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,7 @@
 		5C6D2F1D1D536D5F00C7A341 /* SwiftAndOCUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SwiftAndOCUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		5C6D2F211D536D5F00C7A341 /* SwiftAndOCUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftAndOCUITests.swift; sourceTree = "<group>"; };
 		5C6D2F231D536D5F00C7A341 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5C9F1A6B1D53763F00240298 /* LXSingleton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LXSingleton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +105,7 @@
 			children = (
 				5C6D2F011D536D5F00C7A341 /* AppDelegate.swift */,
 				5C6D2F031D536D5F00C7A341 /* ViewController.swift */,
+				5C9F1A6B1D53763F00240298 /* LXSingleton.swift */,
 				5C3A2E0E1D5371D200C98EB6 /* LXHelpClass.h */,
 				5C3A2E0F1D5371D200C98EB6 /* LXHelpClass.m */,
 				5C6D2F051D536D5F00C7A341 /* Main.storyboard */,
@@ -266,6 +269,7 @@
 				5C3A2E101D5371D200C98EB6 /* LXHelpClass.m in Sources */,
 				5C6D2F041D536D5F00C7A341 /* ViewController.swift in Sources */,
 				5C6D2F021D536D5F00C7A341 /* AppDelegate.swift in Sources */,
+				5C9F1A6C1D53763F00240298 /* LXSingleton.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -1,13 +1,12 @@
 //
 //  LXHelpClass.m
-//  SwiftAndOC
+//  OCAndSwift
 //
 //  Created by 李旭 on 16/8/4.
 //  Copyright © 2016年 李旭. All rights reserved.
 //
 
 #import "LXHelpClass.h"
-#import "SwiftAndOC-swift.h"
 
 @implementation LXHelpClass
 
@@ -32,14 +31,6 @@
     UIImage *desImage = UIGraphicsGetImageFromCurrentImageContext();
     UIGraphicsEndImageContext();
     return desImage;
-}
-
-+ (void)testSingleton
-{
-    LXSingleton *singleton = [LXSingleton shareInstance];
-    singleton.iVal = 10;
-    LXSingleton * newSingleton = [LXSingleton shareInstance];
-    NSLog(@"testSingleton:%ld", (long)newSingleton.iVal);
 }
 
 @end
