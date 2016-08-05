@@ -31,6 +31,7 @@
 ###OC控制器push到Swift控制器
 
 ```objective-c
+#import "OCAndSwift-swift.h"
 - (void)pushBtnClicked:(UIButton *)sender
 {
     SwiftController *swiftVC = [[SwiftController alloc] init];
