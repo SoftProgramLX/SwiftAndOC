@@ -15,6 +15,42 @@
 他们都是Swift代码调用OC代码。<br>
 将OC代码所在头文件放在OCAndSwift-Bridging-Header.h文件里即可，可供任何位置的swift调用，如导入：#import "LXHelpClass.h"。
 
+###Swift代码调用OC方法如下：
+```swift
+  func tappedButton(sender:UIButton!) {
+      self.myImageView.image = LXHelpClass.getEllipseImageWithImage(self.myImageView.image)
+      print(sender.tag, terminator: "swift")
+  }
+```
+    
+```objective-c
+ @interface LXHelpClass : NSObject
+ + (UIImage *)getEllipseImageWithImage:(UIImage *)originImage;
+ @end
+```
+###OC控制器push到Swift控制器
+
+```objective-c
+- (void)pushBtnClicked:(UIButton *)sender
+{
+    SwiftController *swiftVC = [[SwiftController alloc] init];
+    [self.navigationController pushViewController:swiftVC animated:YES];
+}
+```
+
+```swift
+class SwiftController: UIViewController {
+    override func viewDidLoad() {
+    ...
+    }
+    ...
+}
+```
+    
+ <br>
 
 ###swift的控制器效果图如下，圆形头像是swift调用oc方法实现的功能:<br>
 ![image](https://github.com/SoftProgramLX/SwiftAndOC/blob/master/OCAndSwift/OCAndSwift/screen.png)
+
+<br>
+###`QQ:2239344645`    [我的github](https://github.com/SoftProgramLX?tab=repositories)
